@@ -5,13 +5,14 @@
 }
 body {
     font-size: 16px;
-    /* font-family: "manrope"; */
+    font-family: "Nunito Sans", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
 }
 
-.banner1,
-.content2 {
+.banner1 {
     display: flex;
-    margin: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
     height: auto;
     width: auto;
 }
@@ -29,7 +30,7 @@ body {
 }
 .bannerText1 {
     /* border: 1px solid red; */
-    font-family: "Manrope";
+    /* font-family: "Manrope"; */
     font-style: normal;
     font-weight: 800;
     /* font-size: 64px; */
@@ -41,7 +42,7 @@ body {
     margin-top: 82px;
 }
 .button1 {
-    font-family: "Manrope";
+    /* font-family: "Manrope"; */
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -52,6 +53,7 @@ body {
     border-radius: 12px;
     margin-top: 32px;
     border: none;
+    cursor: pointer;
 }
 .bannerPart3 {
     /* border: 1px solid rebeccapurple; */
@@ -78,7 +80,7 @@ body {
 .iconText {
 }
 .iconText1 {
-    font-family: "Manrope";
+    /* font-family: "Manrope"; */
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -86,7 +88,7 @@ body {
     color: #939191;
 }
 .iconText2 {
-    font-family: "Manrope";
+    /* font-family: "Manrope"; */
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -95,17 +97,229 @@ body {
 }
 /* 22222222222222222222222222222222222 */
 .section2 {
+    /* border: 1px solid indigo; */
     background: #e2e6e9;
 }
 .content2 {
+    /* border: 1px solid violet; */
+    display: flex;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    height: auto;
+    width: auto;
 }
 .quoteL {
+    /* border: 1px solid red; */
+
+    display: block;
     width: 50%;
-}
-.quoteR {
-    width: 50%;
-}
-.quoteText {
 }
 .quoteText1 {
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 800;
+    /* font-size: 58px; */
+    font-size: 3.77vw;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.quoteFeature {
+    max-width: 385px;
+    height: auto;
+    margin-top: 37px;
+}
+.f1Text {
+    display: flex;
+    align-items: center;
+}
+.fImg {
+    height: 47px;
+    width: 47px;
+}
+.f1Text1 {
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+    margin-left: 16px;
+}
+.f1Text2 {
+    /* border: 1px solid red; */
+    width: 70%;
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e1b1b;
+    opacity: 0.6;
+    margin-left: 65px;
+}
+.quoteEndText {
+    display: flex;
+    margin-top: 32px;
+}
+.endText {
+    margin-left: 65px;
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #1e1b1b;
+}
+.endTextImg {
+    width: 52px;
+    margin-left: 10px;
+}
+
+.quoteR {
+    display: block;
+    max-width: 50%;
+}
+.quoteRText1 {
+    /* font-family: "Manrope"; */
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 48px; */
+    font-size: 3.12vw;
+    line-height: 140%;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+    margin-bottom: 32px;
+}
+.inputBox {
+    background: #ffffff;
+    border-radius: 2px;
+    height: 72px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: none;
+}
+::placeholder {
+    font-size: 16px;
+    color: #1e1b1b;
+    opacity: 0.5;
+}
+
+.section3 {
+    background: #f2f2f2;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.whatWeOffer {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.s4Heading2 {
+    display: flex;
+    justify-content: center;
+}
+.h2Text1 {
+    font-style: normal;
+    width: 60%;
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+    margin-top: 8px;
+}
+.grid {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 64px;
+}
+.g1 {
+    background: #ffffff;
+    width: 316px;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.g1:hover {
+    background: #ff6433;
+}
+.g1Img1 {
+    width: 50px;
+    height: 50px;
+    color: black;
+}
+.g1Text1 {
+    margin-top: 16px;
+}
+.s3EndText {
+    margin-top: 32px;
+    float: right;
+    margin-right: 320px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #1e1b1b;
+}
+.section4 {
+    padding-top: 128px;
+    padding-bottom: 128px;
+    background: #e2e6e9;
+}
+.faqText1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.faqCards {
+    margin-top: 95px;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+.card {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+}
+.cardQue {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.card img {
+    width: 50px;
+    height: 50px;
 }

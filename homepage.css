@@ -269,7 +269,10 @@ body {
     color: black;
 }
 .g1Text1 {
-    margin-top: 16px;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
 }
 .s3EndText {
     margin-top: 32px;
@@ -322,4 +325,127 @@ body {
 .card img {
     width: 50px;
     height: 50px;
+}
+/* 5555555555555555555555 */
+.section5 {
+    display: block;
+    background: #f2f2f2;
+    mix-blend-mode: multiply;
+    /* padding-left: 10%; */
+    /* padding-right: 10%; */
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.slider5 {
+    
+}
+.sliderText {
+    /* border: 1px solid darkred; */
+    display: flex;
+    justify-content: center;
+}
+.sliderText1 {
+    width: 70%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.innerSlider {
+    display: flex;
+    margin-top: 94px;
+    /* overflow: hidden; */
+}
+
+.sliderArrowLeft {
+    height: 50px;
+}
+.sliderArrowRight {
+    height: 50px;
+    transform: rotate(180deg);
+}
+.iiSlider {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    gap: 48px;
+    position: relative;
+}
+.slide {
+    display: block;
+    width: 580px;
+    height: 376px;
+    background: #ffffff;
+    border: 1px solid rgba(172, 172, 172, 0.29);
+    box-shadow: 11px 130px 100px 30px rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+.slideNameDiv {
+    display: flex;
+    align-items: center;
+    margin-left: 72px;
+    margin-top: 62px;
+}
+.perImg {
+    width: 64px;
+    height: 64px;
+    border-radius: 151px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+.personName {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+}
+.personLocation {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #939191;
+}
+.slideDescription {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #1e1b1b;
+    margin-left: 72px;
+    margin-right: 72px;
+    margin-top: 20px;
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    /* user-select: none; */
+}
+.prev:hover,
+.next:hover {
+    background-color: rgba(160, 150, 150, 0.8);
+    border-radius: 50%;
+}
+.next{
+    position: absolute;
+    right: 0;
 }

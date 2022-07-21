@@ -8,7 +8,75 @@ body {
     font-family: "Nunito Sans", sans-serif;
     font-family: "Red Hat Display", sans-serif;
 }
+.nav {
+    display: flex;
+    height: 90px;
+    /* position: fixed; */
+}
+.navL {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.navLogo {
+    margin-left: -170px;
+    width: 120px;
+    height: 27px;
+}
 
+.navR {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.navR a {
+    text-decoration: none;
+    padding: 20px;
+}
+.headerLinks {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e1b1b;
+}
+hr {
+    height: 42px;
+    margin-right: 20px;
+    border: 1px solid #939191;
+    opacity: 0.36;
+}
+.roadAssistance {
+    display: flex;
+    align-items: center;
+}
+.raImg {
+    height: 40px;
+    width: 40px;
+}
+.assistance {
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+}
+.raText1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1e1b1b;
+    opacity: 0.7;
+}
+.raText2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #1e1b1b;
+}
+
+/* 1111111111111111111111 */
 .banner1 {
     display: flex;
     margin-left: 15%;
@@ -106,7 +174,7 @@ body {
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 128px;
-    margin-bottom: 128px;
+    /* margin-bottom: 128px; */
     padding-top: 128px;
     padding-bottom: 128px;
     height: auto;
@@ -323,6 +391,7 @@ body {
     color: #1e1b1b;
 }
 .card img {
+    cursor: pointer;
     width: 50px;
     height: 50px;
 }
@@ -336,8 +405,7 @@ body {
     padding-top: 128px;
     padding-bottom: 128px;
 }
-.slider5 {
-}
+
 .sliderText {
     /* border: 1px solid darkred; */
     display: flex;
@@ -353,31 +421,25 @@ body {
     letter-spacing: -0.03em;
     color: #1e1b1b;
 }
-.innerSlider {
-    border: 1px solid red;
+.swiper {
+    /* border: 1px solid red; */
     display: flex;
+    justify-content: center;
     margin-top: 94px;
+    position: relative;
+}
+.swiperWrapper {
+    /* border: 1px solid green; */
+    display: flex;
+    gap: 40px;
+    width: 1210px;
     overflow: hidden;
 }
 
-.sliderArrowLeft {
-    height: 50px;
-}
-.sliderArrowRight {
-    height: 50px;
-    transform: rotate(180deg);
-}
-.iiSlider {
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    display: flex;
-    gap: 48px;
-    position: relative;
-}
-
-.slide {
+.swiperSlide {
+    /* border: 1px solid blue; */
     display: block;
-    width: 580px;
+    min-width: 580px;
     height: 376px;
     background: #ffffff;
     border: 1px solid rgba(172, 172, 172, 0.29);
@@ -428,27 +490,33 @@ body {
 }
 .prev,
 .next {
+    display: flex;
+    align-content: center;
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
+    top: 40%;
     padding: 16px;
-    color: white;
     font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    /* user-select: none; */
+    transition: 0.3s ease;
 }
 .prev:hover,
 .next:hover {
-    background-color: rgba(160, 150, 150, 0.8);
+    background: #1e1b1b;
     border-radius: 50%;
+    transform: scale(1.2);
+}
+.prev {
+    left: 40px;
 }
 .next {
-    position: absolute;
-    right: 0;
+    right: 40px;
+}
+.sliderArrowLeft {
+    height: 50px;
+}
+.sliderArrowRight {
+    height: 50px;
+    transform: rotate(180deg);
 }
 /* 666666666666666666666666666666 */
 .section6 {
@@ -550,6 +618,10 @@ body {
     margin-top: 64px;
     gap: 24px;
 }
+.social a {
+    height: 24px;
+    width: 24px;
+}
 .helpline,
 .address,
 .weAreOpen {
@@ -595,12 +667,16 @@ body {
     justify-content: center;
     gap: 36px;
 }
+.c2 a {
+    text-decoration: none;
+}
 .c2Text2 {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 28px;
     color: #ffffff;
+    cursor: pointer;
 }
 .c3 {
     width: 35%;

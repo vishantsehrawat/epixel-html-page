@@ -6,18 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finsweet</title>
-    <link rel="stylesheet" href="./homepage.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./homepage.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./homepage.js" defer></script>
+
 
 </head>
 
 <body>
-    <nav>
+    <nav class="nav">
+        <div class="navL">
+            <div class="navLogo">
+                <img class="navLogoImg" src="./images/navLogo.svg" alt="img">
+            </div>
 
+        </div>
+        <div class="navR">
+            <div class="navLinks">
+                <a href="#"><span class="headerLinks homeNav">Home</span></a>
+                <a href="#"><span class="headerLinks aboutUsNav">AboutUs</span></a>
+                <a href="#"><span class="headerLinks servicesNav">Services</span></a>
+                <a href="#"><span class="headerLinks blogNav">Blog</span></a>
+                <a href="#"><span class="headerLinks contactUsNav">ContactUs</span></a>
+            </div>
+            <hr>
+            <div class="roadAssistance">
+                <div class="raImg">
+                    <img class="raImg1" src="./images/assistanceIcon.svg" alt="Galleryimg">
+                </div>
+                <div class="assistance">
+                    <span class="raText1">Road Assistance</span>
+                    <span class="raText2">1800 264 24 52</span>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <section>
@@ -106,6 +134,8 @@
             <p class="h2Text1">We offer full service auto repair & maintenance</p>
         </div>
         <div class="grid">
+            <!-- can put these in anchor tags -->
+
             <div class="g1">
                 <div class="g1Img">
                     <img class="g1Img1" src="./images/diagnostics.svg" alt="img">
@@ -207,96 +237,89 @@
             <div class="sliderText">
                 <p class="sliderText1">Our customers say the nicest things about our service</p>
             </div>
-            <div class="innerSlider">
-
-                <div class="iiSlider">
-                    <div class="iiiSlider">
-
-                    </div>
-                    <div class="slide">
+            <div class="swiper">
+                <div class="swiperWrapper">
+                    <div class="swiperSlide">
                         <div class="slideNameDiv">
                             <div class="personImgDiv">
                                 <img class="personImg" src="./images/personPhoto.svg" alt="Galleryimg">
                             </div>
                             <div class="name">
                                 <span class="personName">Jonathan Valle</span>
-                                <span class="personLoaction">New York</span>
+                                <span class="personLocation">New York</span>
                             </div>
                         </div>
-
                         <div class="slideDescription">
                             <p class="personDescription">
-                                I have got my car repaired at Finsweet many times before, they are good at what they do.
+                                I have got my car repaired at Finsweet many times before, they are good at what they
+                                do.
                                 Not
                                 only did they repair my car in a short comprehensive look on all the working
                             </p>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiperSlide">
                         <div class="slideNameDiv">
                             <div class="personImgDiv">
                                 <img class="personImg" src="./images/personPhoto.svg" alt="Galleryimg">
                             </div>
                             <div class="name">
-                                <span class="personName">Jonathan Valle</span>
-                                <span class="personLoaction">New York</span>
+                                <span class="personName">Rajan</span>
+                                <span class="personLocation">Jersey</span>
                             </div>
                         </div>
-
                         <div class="slideDescription">
                             <p class="personDescription">
-                                I have got my car repaired at Finsweet many times before, they are good at what they do.
+                                I have got my car repaired at Finsweet many times before, they are good at what they
+                                do.
                                 Not
                                 only did they repair my car in a short comprehensive look on all the working
                             </p>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiperSlide">
                         <div class="slideNameDiv">
                             <div class="personImgDiv">
                                 <img class="personImg" src="./images/personPhoto.svg" alt="Galleryimg">
                             </div>
                             <div class="name">
-                                <span class="personName">Jonathan Valle</span>
-                                <span class="personLoaction">New York</span>
+                                <span class="personName">Friday </span>
+                                <span class="personLocation">USA</span>
                             </div>
                         </div>
-
                         <div class="slideDescription">
                             <p class="personDescription">
-                                I have got my car repaired at Finsweet many times before, they are good at what they do.
+                                I have got my car repaired at Finsweet many times before, they are good at what they
+                                do.
                                 Not
                                 only did they repair my car in a short comprehensive look on all the working
                             </p>
                         </div>
                     </div>
-                    <div class="slide">
+                    <div class="swiperSlide">
                         <div class="slideNameDiv">
                             <div class="personImgDiv">
                                 <img class="personImg" src="./images/personPhoto.svg" alt="Galleryimg">
                             </div>
                             <div class="name">
-                                <span class="personName">Jonathan Valle</span>
-                                <span class="personLoaction">New York</span>
+                                <span class="personName">Anastasia</span>
+                                <span class="personLocation">Tenessy</span>
                             </div>
                         </div>
-
                         <div class="slideDescription">
                             <p class="personDescription">
-                                I have got my car repaired at Finsweet many times before, they are good at what they do.
+                                I have got my car repaired at Finsweet many times before, they are good at what they
+                                do.
                                 Not
                                 only did they repair my car in a short comprehensive look on all the working
                             </p>
                         </div>
                     </div>
-                    <a class="prev" onclick="plusSlides(-1)"><img src="./images/leftArrow.svg" class="sliderArrowLeft"
-                            alt="leftArrow"></a>
-                    <a class="next" onclick="plusSlides(1)"><img src="./images/leftArrow.svg" class="sliderArrowRight"
-                            alt="rightArrow"></a>
-
                 </div>
-
+                <div class="prev"><img src="./images/leftArrow.svg" class="sliderArrowLeft" alt="leftArrow"></div>
+                <div class="next"><img src="./images/leftArrow.svg" class="sliderArrowRight" alt="rightArrow"></div>
             </div>
+
         </div>
     </section5>
     <section class="section6">
@@ -364,10 +387,18 @@
                     <p class="touchText">Get in touch with us for your service</p>
                 </div>
                 <div class="social">
-                    <img class="socialImg" src="./images/fb.svg" alt="img">
-                    <img class="socialImg" src="./images/twitter.svg" alt="img">
-                    <img class="socialImg" src="./images/insta.svg" alt="img">
-                    <img class="socialImg" src="./images/linkedIn.svg" alt="img">
+                    <a href="#">
+                        <img class="socialImg" src="./images/fb.svg" alt="img">
+                    </a>
+                    <a href="#">
+                        <img class="socialImg" src="./images/twitter.svg" alt="img">
+                    </a>
+                    <a href="#">
+                        <img class="socialImg" src="./images/insta.svg" alt="img">
+                    </a>
+                    <a href="#">
+                        <img class="socialImg" src="./images/linkedIn.svg" alt="img">
+                    </a>
 
                 </div>
             </div>
@@ -393,11 +424,11 @@
 
         </div>
         <div class="c2">
-            <span class="c2Text2 home">Home</span>
-            <span class="c2Text2 aboutUs">AboutUs</span>
-            <span class="c2Text2 services">Services</span>
-            <span class="c2Text2 blog">Blog</span>
-            <span class="c2Text2 contactUs">ContactUs</span>
+            <a href="#"><span class="c2Text2 home">Home</span></a>
+            <a href="#"><span class="c2Text2 aboutUs">AboutUs</span></a>
+            <a href="#"><span class="c2Text2 services">Services</span></a>
+            <a href="#"><span class="c2Text2 blog">Blog</span></a>
+            <a href="#"><span class="c2Text2 contactUs">ContactUs</span></a>
         </div>
         <div class="c3">
             <span class="c3Text">@ Copyright Finsweet 2021</span>

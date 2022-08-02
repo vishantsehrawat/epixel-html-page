@@ -10,6 +10,8 @@ var swiper = new Swiper(".swiper", {
             swiper.changeDirection(getDirection());
         },
     },
+    observer: true,
+    observeParents: true,
 });
 
 function getDirection() {
